@@ -1,0 +1,1789 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>陈冠希 - 影像资料档案馆,记录与回望</title>
+<meta name="description" content="陈冠希照片门事件影像资料档案馆官网，以客观视角梳理事件脉络、媒体影像与社会讨论，呈现一次完整的公共事件档案。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23b91c1c'/%3E%3Cpath d='M14 40 L32 14 L50 40 Z' fill='%23fef2f2'/%3E%3Ccircle cx='32' cy='46' r='4' fill='%23fef2f2'/%3E%3C/svg%3E">
+<style>
+:root{
+  --cj-red:#b91c1c;
+  --cj-red-deep:#7f1d1d;
+  --cj-ink:#141414;
+  --cj-ink-2:#2a2a2a;
+  --cj-line:#e3dedb;
+  --cj-paper:#faf8f6;
+  --cj-paper-2:#f2eeea;
+  --cj-gray:#6b6560;
+  --cj-gold:#a16207;
+  --cj-radius:4px;
+  --cj-shadow:0 2px 14px rgba(20,20,20,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;scroll-padding-top:128px;}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  background:var(--cj-paper);
+  color:var(--cj-ink);
+  line-height:1.75;
+  font-size:15px;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+ul{list-style:none;}
+
+/* ============ sticky wrapper ============ */
+.cj-sticky-top{position:sticky;top:0;z-index:200;}
+
+/* ============ announce bar ============ */
+.cj-announce{
+  background:var(--cj-ink);
+  color:#f4e9e4;
+  font-size:13px;
+  letter-spacing:.02em;
+}
+.cj-announce-inner{
+  max-width:1180px;margin:0 auto;padding:9px 20px;
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+}
+.cj-announce-tag{
+  background:var(--cj-red);color:#fff;font-size:11px;font-weight:700;
+  padding:1px 8px;border-radius:2px;letter-spacing:.08em;flex:none;
+}
+.cj-announce-list{display:flex;gap:24px;flex-wrap:wrap;overflow:hidden;}
+.cj-announce-list li{white-space:nowrap;opacity:.92;}
+.cj-announce-list li b{color:#fca5a5;font-weight:600;}
+.cj-announce-link{margin-left:auto;color:#fca5a5;font-size:12px;flex:none;border-bottom:1px solid rgba(252,165,165,.4);}
+.cj-announce-link:hover{color:#fff;}
+
+/* ============ header ============ */
+.cj-header{
+  background:rgba(250,248,246,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--cj-line);
+}
+.cj-header-inner{
+  max-width:1180px;margin:0 auto;padding:0 20px;
+  display:flex;align-items:center;gap:26px;height:68px;
+}
+.cj-logo{display:flex;align-items:center;gap:10px;flex:none;}
+.cj-logo-mark{width:34px;height:34px;flex:none;}
+.cj-logo-text{display:flex;flex-direction:column;line-height:1.15;}
+.cj-logo-text strong{font-size:17px;letter-spacing:.06em;}
+.cj-logo-text small{font-size:10px;color:var(--cj-gray);letter-spacing:.18em;}
+.cj-nav{display:flex;gap:2px;margin-left:8px;}
+.cj-nav a{
+  padding:8px 13px;font-size:14px;color:var(--cj-ink-2);border-radius:var(--cj-radius);
+  transition:background .18s,color .18s;
+}
+.cj-nav a:hover{background:var(--cj-paper-2);color:var(--cj-red);}
+.cj-header-tools{margin-left:auto;display:flex;align-items:center;gap:10px;}
+.cj-search{
+  display:flex;align-items:center;gap:6px;
+  border:1px solid var(--cj-line);background:#fff;
+  border-radius:var(--cj-radius);padding:5px 8px 5px 10px;
+}
+.cj-search input{
+  border:none;outline:none;font-size:13px;width:150px;background:transparent;color:var(--cj-ink);
+}
+.cj-search button{
+  font-size:12px;color:#fff;background:var(--cj-red);padding:4px 10px;border-radius:2px;
+}
+.cj-search button:hover{background:var(--cj-red-deep);}
+.cj-burger{
+  display:none;width:38px;height:38px;border:1px solid var(--cj-line);
+  border-radius:var(--cj-radius);background:#fff;flex-direction:column;gap:4px;
+  align-items:center;justify-content:center;
+}
+.cj-burger span{display:block;width:16px;height:2px;background:var(--cj-ink);transition:.2s;}
+.cj-mobile-nav{display:none;border-top:1px solid var(--cj-line);background:#fff;}
+.cj-mobile-nav.open{display:block;}
+.cj-mobile-nav a{display:block;padding:12px 22px;font-size:14px;border-bottom:1px solid var(--cj-paper-2);}
+.cj-mobile-nav a:active{background:var(--cj-paper-2);}
+
+/* ============ layout helpers ============ */
+.cj-wrap{max-width:1180px;margin:0 auto;padding:0 20px;}
+.cj-section{padding:64px 0;}
+.cj-section-alt{background:var(--cj-paper-2);}
+.cj-sec-head{margin-bottom:34px;display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;}
+.cj-sec-head .cj-eyebrow{
+  display:inline-block;font-size:11px;letter-spacing:.22em;color:var(--cj-red);
+  font-weight:700;margin-bottom:8px;
+}
+.cj-sec-head h2{font-size:26px;letter-spacing:.03em;line-height:1.3;}
+.cj-sec-head p{color:var(--cj-gray);font-size:13.5px;max-width:560px;}
+.cj-sec-head .cj-more{margin-left:auto;font-size:13px;color:var(--cj-red);border-bottom:1px solid rgba(185,28,28,.35);padding-bottom:1px;}
+.cj-sec-head .cj-more:hover{color:var(--cj-red-deep);}
+
+/* ============ hero ============ */
+.cj-hero{
+  background:
+    radial-gradient(1200px 400px at 85% -10%, rgba(185,28,28,.10), transparent 60%),
+    linear-gradient(180deg,#fff 0%, var(--cj-paper) 100%);
+  border-bottom:1px solid var(--cj-line);
+}
+.cj-hero-grid{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;
+  padding:58px 0 56px;
+}
+.cj-hero-copy .cj-hero-badge{
+  display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;
+  color:var(--cj-red);background:rgba(185,28,28,.07);border:1px solid rgba(185,28,28,.2);
+  padding:4px 12px;border-radius:40px;margin-bottom:18px;letter-spacing:.05em;
+}
+.cj-hero-copy h1{
+  font-size:44px;line-height:1.18;letter-spacing:.02em;margin-bottom:18px;
+}
+.cj-hero-copy h1 em{
+  font-style:normal;color:var(--cj-red);position:relative;white-space:nowrap;
+}
+.cj-hero-copy h1 em::after{
+  content:"";position:absolute;left:0;right:0;bottom:4px;height:8px;
+  background:rgba(185,28,28,.14);z-index:-1;
+}
+.cj-hero-lead{color:var(--cj-ink-2);font-size:15px;margin-bottom:24px;max-width:540px;}
+.cj-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px;}
+.cj-btn{
+  display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;
+  padding:11px 22px;border-radius:var(--cj-radius);transition:.18s;letter-spacing:.03em;
+}
+.cj-btn-primary{background:var(--cj-red);color:#fff;box-shadow:0 6px 18px rgba(185,28,28,.22);}
+.cj-btn-primary:hover{background:var(--cj-red-deep);transform:translateY(-1px);}
+.cj-btn-ghost{border:1px solid var(--cj-ink);color:var(--cj-ink);background:transparent;}
+.cj-btn-ghost:hover{background:var(--cj-ink);color:#fff;}
+.cj-hero-stats{display:flex;gap:34px;flex-wrap:wrap;}
+.cj-hero-stats .cj-stat b{font-size:24px;letter-spacing:.02em;display:block;line-height:1.2;}
+.cj-hero-stats .cj-stat span{font-size:12px;color:var(--cj-gray);letter-spacing:.06em;}
+.cj-hero-visual{position:relative;}
+.cj-hero-visual .cj-hero-frame{
+  border-radius:6px;overflow:hidden;box-shadow:0 20px 50px -18px rgba(20,20,20,.45);
+  border:1px solid var(--cj-line);background:#fff;
+}
+.cj-hero-visual .cj-hero-frame svg{width:100%;height:auto;}
+.cj-hero-caption{
+  margin-top:12px;font-size:12px;color:var(--cj-gray);display:flex;justify-content:space-between;
+  border-top:1px dashed var(--cj-line);padding-top:8px;
+}
+.cj-hero-floating{
+  position:absolute;left:-18px;bottom:56px;
+  background:#fff;border-left:3px solid var(--cj-red);padding:10px 16px;
+  box-shadow:var(--cj-shadow);border-radius:2px;max-width:230px;
+}
+.cj-hero-floating b{font-size:13px;display:block;}
+.cj-hero-floating span{font-size:11.5px;color:var(--cj-gray);}
+
+/* ============ intro long text ============ */
+.cj-intro{background:#fff;border-top:1px solid var(--cj-line);border-bottom:1px solid var(--cj-line);}
+.cj-intro-inner{display:grid;grid-template-columns:220px 1fr;gap:44px;padding:58px 0;}
+.cj-intro-aside{
+  align-self:start;position:sticky;top:140px;
+}
+.cj-intro-aside h2{font-size:20px;line-height:1.4;margin-bottom:10px;}
+.cj-intro-aside p{font-size:12.5px;color:var(--cj-gray);line-height:1.7;}
+.cj-intro-aside .cj-aside-rule{width:36px;height:3px;background:var(--cj-red);margin-bottom:16px;}
+.cj-prose{max-width:none;}
+.cj-prose p{margin-bottom:16px;color:var(--cj-ink-2);font-size:14.5px;text-align:justify;}
+.cj-prose h3{font-size:16.5px;margin:26px 0 10px;letter-spacing:.03em;padding-left:12px;border-left:3px solid var(--cj-red);}
+.cj-prose h3:first-child{margin-top:0;}
+.cj-prose strong{color:var(--cj-ink);}
+
+/* ============ focus content ============ */
+.cj-focus-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:22px;}
+.cj-focus-main{
+  position:relative;border-radius:6px;overflow:hidden;box-shadow:var(--cj-shadow);
+  background:#000;min-height:340px;display:flex;
+}
+.cj-focus-main svg{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;}
+.cj-focus-main .cj-focus-overlay{
+  position:relative;z-index:2;margin-top:auto;padding:26px;
+  background:linear-gradient(0deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.45) 55%,transparent 100%);
+  color:#fff;width:100%;
+}
+.cj-focus-main .cj-focus-overlay .cj-tag{background:var(--cj-red);}
+.cj-focus-main h3{font-size:21px;line-height:1.4;margin:10px 0 6px;}
+.cj-focus-main p{font-size:13px;color:#d9d2cd;max-width:560px;}
+.cj-focus-main .cj-focus-meta{margin-top:12px;font-size:12px;color:#c9c0bb;display:flex;gap:16px;flex-wrap:wrap;}
+.cj-focus-side{display:grid;grid-template-rows:1fr 1fr;gap:22px;}
+.cj-focus-small{
+  display:grid;grid-template-columns:120px 1fr;gap:14px;background:#fff;border:1px solid var(--cj-line);
+  border-radius:6px;overflow:hidden;box-shadow:var(--cj-shadow);transition:.2s;
+}
+.cj-focus-small:hover{transform:translateY(-2px);border-color:rgba(185,28,28,.4);}
+.cj-focus-small .cj-thumb{position:relative;background:#ddd;}
+.cj-focus-small .cj-thumb svg{width:100%;height:100%;}
+.cj-focus-small .cj-body{padding:12px 14px 12px 0;}
+.cj-focus-small .cj-body h3{font-size:14.5px;line-height:1.45;margin-bottom:5px;}
+.cj-focus-small .cj-body p{font-size:12px;color:var(--cj-gray);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.cj-focus-small .cj-body .cj-mini-meta{font-size:11px;color:#918b86;margin-top:6px;}
+
+/* ============ video grid ============ */
+.cj-video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.cj-card{
+  background:#fff;border:1px solid var(--cj-line);border-radius:6px;overflow:hidden;
+  box-shadow:var(--cj-shadow);display:flex;flex-direction:column;transition:.22s;
+}
+.cj-card:hover{transform:translateY(-3px);box-shadow:0 12px 30px -10px rgba(20,20,20,.28);}
+.cj-cover{position:relative;aspect-ratio:16/9;overflow:hidden;background:#e7e2de;}
+.cj-cover svg{width:100%;height:100%;}
+.cj-cover .cj-tag{
+  position:absolute;top:10px;left:10px;z-index:2;font-size:11px;font-weight:600;
+  padding:2px 8px;border-radius:2px;background:rgba(255,255,255,.9);color:var(--cj-ink);
+  letter-spacing:.04em;
+}
+.cj-cover .cj-dur{
+  position:absolute;right:10px;bottom:10px;z-index:2;font-size:11px;color:#fff;
+  background:rgba(0,0,0,.65);padding:1px 7px;border-radius:2px;
+}
+.cj-cover .cj-play{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:1;
+  opacity:0;transition:.2s;background:rgba(0,0,0,.18);
+}
+.cj-card:hover .cj-play{opacity:1;}
+.cj-play i{
+  width:44px;height:44px;border-radius:50%;background:rgba(185,28,28,.92);
+  display:flex;align-items:center;justify-content:center;
+}
+.cj-play i::after{
+  content:"";border-style:solid;border-width:7px 0 7px 12px;border-color:transparent transparent transparent #fff;
+  margin-left:3px;
+}
+.cj-card-body{padding:14px 16px 16px;display:flex;flex-direction:column;flex:1;}
+.cj-card-body h3{font-size:15px;line-height:1.5;margin-bottom:6px;}
+.cj-card-body h3:hover{color:var(--cj-red);}
+.cj-card-body .cj-desc{font-size:12.5px;color:var(--cj-gray);line-height:1.65;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:10px;}
+.cj-card-foot{margin-top:auto;display:flex;align-items:center;gap:8px;font-size:11.5px;color:#918b86;}
+.cj-avatar{width:22px;height:22px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;font-weight:700;overflow:hidden;}
+.cj-card-foot .cj-author{color:var(--cj-ink-2);font-weight:600;}
+.cj-card-foot .cj-acts{margin-left:auto;display:flex;gap:10px;}
+.cj-act{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;color:#918b86;transition:.15s;}
+.cj-act:hover{color:var(--cj-red);}
+.cj-act.on{color:var(--cj-red);font-weight:700;}
+
+/* ============ creators ============ */
+.cj-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.cj-creator{
+  background:#fff;border:1px solid var(--cj-line);border-radius:6px;padding:22px 18px;
+  text-align:center;box-shadow:var(--cj-shadow);transition:.2s;cursor:pointer;
+}
+.cj-creator:hover{border-color:rgba(185,28,28,.4);transform:translateY(-3px);}
+.cj-creator .cj-avatar-lg{
+  width:62px;height:62px;border-radius:50%;margin:0 auto 12px;
+  display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:700;color:#fff;
+  box-shadow:0 4px 12px rgba(20,20,20,.15);
+}
+.cj-creator h3{font-size:15px;margin-bottom:3px;}
+.cj-creator .cj-role{font-size:11.5px;color:var(--cj-red);letter-spacing:.04em;margin-bottom:8px;}
+.cj-creator .cj-bio{font-size:12px;color:var(--cj-gray);line-height:1.6;min-height:58px;}
+.cj-creator .cj-nums{display:flex;justify-content:center;gap:18px;margin-top:10px;padding-top:10px;border-top:1px dashed var(--cj-line);font-size:11.5px;color:#918b86;}
+.cj-creator .cj-nums b{color:var(--cj-ink);font-size:13px;display:block;}
+
+/* ============ topics strip ============ */
+.cj-topics{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;}
+.cj-topic-chip{
+  font-size:12.5px;padding:6px 14px;border-radius:40px;background:#fff;
+  border:1px solid var(--cj-line);color:var(--cj-ink-2);transition:.18s;
+}
+.cj-topic-chip:hover{border-color:var(--cj-red);color:var(--cj-red);background:rgba(185,28,28,.04);}
+
+/* ============ reviews ============ */
+.cj-review-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+.cj-review{
+  background:#fff;border:1px solid var(--cj-line);border-radius:6px;padding:18px 20px;
+  box-shadow:var(--cj-shadow);position:relative;
+}
+.cj-review::before{
+  content:"“";position:absolute;top:6px;right:18px;font-size:48px;line-height:1;
+  color:rgba(185,28,28,.13);font-family:Georgia,serif;
+}
+.cj-review p{font-size:13.5px;color:var(--cj-ink-2);margin-bottom:12px;line-height:1.75;}
+.cj-review .cj-rv-foot{display:flex;align-items:center;gap:10px;font-size:12px;color:#918b86;}
+.cj-review .cj-rv-foot b{color:var(--cj-ink);font-size:12.5px;}
+.cj-review .cj-rv-foot .cj-stars{margin-left:auto;color:var(--cj-gold);letter-spacing:1px;font-size:12px;}
+
+/* ============ news ============ */
+.cj-news-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start;}
+.cj-news-list li{
+  display:grid;grid-template-columns:86px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--cj-line);
+}
+.cj-news-list li:first-child{padding-top:0;}
+.cj-news-list .cj-ndate{font-size:12px;color:var(--cj-gray);letter-spacing:.04em;}
+.cj-news-list .cj-ndate b{display:block;font-size:20px;color:var(--cj-red);font-weight:700;line-height:1.1;}
+.cj-news-list h3{font-size:14.5px;margin-bottom:4px;}
+.cj-news-list p{font-size:12.5px;color:var(--cj-gray);line-height:1.65;}
+.cj-news-list a:hover h3{color:var(--cj-red);}
+
+.cj-partner-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.cj-partner{
+  border:1px solid var(--cj-line);background:#fff;border-radius:4px;
+  padding:14px 10px;text-align:center;font-size:12.5px;color:var(--cj-ink-2);
+  font-weight:600;letter-spacing:.04em;transition:.18s;
+}
+.cj-partner:hover{border-color:var(--cj-red);color:var(--cj-red);}
+.cj-partner small{display:block;font-weight:400;color:#a8a29d;font-size:10.5px;letter-spacing:.1em;margin-top:3px;}
+
+/* ============ gallery wall ============ */
+.cj-wall{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;grid-auto-rows:120px;}
+.cj-wall-item{position:relative;border-radius:5px;overflow:hidden;background:#dfd9d4;box-shadow:var(--cj-shadow);}
+.cj-wall-item svg{width:100%;height:100%;}
+.cj-wall-item .cj-wall-label{
+  position:absolute;left:0;right:0;bottom:0;z-index:2;padding:18px 12px 9px;
+  background:linear-gradient(0deg,rgba(0,0,0,.7),transparent);color:#fff;font-size:12px;
+}
+.cj-wall-item.big{grid-column:span 2;grid-row:span 2;}
+.cj-wall-item.wide{grid-column:span 2;}
+.cj-wall-item.tall{grid-row:span 2;}
+
+/* ============ faq ============ */
+.cj-faq{max-width:820px;}
+.cj-faq details{
+  background:#fff;border:1px solid var(--cj-line);border-radius:6px;margin-bottom:10px;
+  overflow:hidden;transition:.2s;
+}
+.cj-faq details[open]{border-color:rgba(185,28,28,.4);box-shadow:var(--cj-shadow);}
+.cj-faq summary{
+  padding:15px 20px;font-size:14px;font-weight:600;cursor:pointer;list-style:none;
+  display:flex;align-items:center;gap:12px;
+}
+.cj-faq summary::-webkit-details-marker{display:none;}
+.cj-faq summary::before{
+  content:"+";width:20px;height:20px;flex:none;border-radius:50%;background:var(--cj-paper-2);
+  display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--cj-red);
+  transition:.2s;
+}
+.cj-faq details[open] summary::before{content:"−";background:var(--cj-red);color:#fff;}
+.cj-faq .cj-faq-body{padding:0 20px 18px 52px;font-size:13px;color:var(--cj-gray);line-height:1.8;}
+
+/* ============ contact ============ */
+.cj-contact{
+  background:linear-gradient(135deg,var(--cj-ink) 0%, #3a1414 100%);
+  color:#f0e8e4;border-radius:8px;padding:42px 44px;
+  display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;
+}
+.cj-contact h2{font-size:24px;margin-bottom:10px;letter-spacing:.03em;}
+.cj-contact p{font-size:13.5px;color:#c9bfba;max-width:460px;}
+.cj-contact-actions{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap;}
+.cj-contact .cj-btn-primary{box-shadow:none;}
+.cj-contact .cj-btn-ghost{border-color:rgba(255,255,255,.4);color:#fff;}
+.cj-contact .cj-btn-ghost:hover{background:#fff;color:var(--cj-ink);}
+.cj-contact-info{display:flex;flex-direction:column;gap:14px;border-left:1px solid rgba(255,255,255,.15);padding-left:34px;}
+.cj-contact-info .cj-ci-item{font-size:12.5px;color:#c9bfba;}
+.cj-contact-info .cj-ci-item b{display:block;color:#fff;font-size:13.5px;margin-bottom:2px;letter-spacing:.03em;}
+
+/* ============ footer ============ */
+.cj-footer{background:#101010;color:#a39c97;font-size:12.5px;padding:46px 0 26px;}
+.cj-footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:34px;margin-bottom:34px;}
+.cj-footer h4{color:#fff;font-size:13px;letter-spacing:.08em;margin-bottom:14px;font-weight:600;}
+.cj-footer p{line-height:1.8;}
+.cj-footer ul li{margin-bottom:8px;}
+.cj-footer a:hover{color:#fca5a5;}
+.cj-footer-bottom{
+  border-top:1px solid rgba(255,255,255,.1);padding-top:20px;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:11.5px;color:#6f6862;
+}
+.cj-footer-bottom a{color:#8b837d;}
+.cj-footer-bottom a:hover{color:#fca5a5;}
+
+/* ============ back to top ============ */
+.cj-top-btn{
+  position:fixed;right:24px;bottom:26px;z-index:180;width:44px;height:44px;border-radius:50%;
+  background:var(--cj-ink);color:#fff;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 22px rgba(0,0,0,.3);opacity:0;visibility:hidden;transition:.25s;
+}
+.cj-top-btn.show{opacity:1;visibility:visible;}
+.cj-top-btn:hover{background:var(--cj-red);}
+.cj-top-btn i{border-style:solid;border-width:0 2px 2px 0;display:inline-block;padding:4px;transform:rotate(-135deg);margin-top:3px;}
+
+/* ============ toast / modal ============ */
+.cj-toast{
+  position:fixed;left:50%;bottom:88px;transform:translate(-50%,20px);z-index:400;
+  background:var(--cj-ink);color:#fff;font-size:13px;padding:10px 22px;border-radius:40px;
+  opacity:0;pointer-events:none;transition:.28s;box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+.cj-toast.show{opacity:1;transform:translate(-50%,0);}
+.cj-modal{
+  position:fixed;inset:0;z-index:500;background:rgba(10,10,10,.55);
+  display:none;align-items:center;justify-content:center;padding:20px;
+  backdrop-filter:blur(3px);
+}
+.cj-modal.open{display:flex;}
+.cj-modal-box{
+  background:#fff;border-radius:8px;max-width:440px;width:100%;padding:28px 28px 24px;
+  box-shadow:0 30px 70px rgba(0,0,0,.4);position:relative;
+}
+.cj-modal-box h3{font-size:18px;margin-bottom:8px;}
+.cj-modal-box p{font-size:13px;color:var(--cj-gray);margin-bottom:18px;line-height:1.75;}
+.cj-modal-box .cj-field{margin-bottom:12px;}
+.cj-modal-box label{display:block;font-size:12px;color:var(--cj-ink-2);margin-bottom:5px;font-weight:600;}
+.cj-modal-box input,.cj-modal-box textarea{
+  width:100%;border:1px solid var(--cj-line);border-radius:4px;padding:9px 12px;
+  font-family:inherit;font-size:13px;outline:none;background:var(--cj-paper);color:var(--cj-ink);
+}
+.cj-modal-box input:focus,.cj-modal-box textarea:focus{border-color:var(--cj-red);background:#fff;}
+.cj-modal-box .cj-modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:6px;}
+.cj-modal-close{
+  position:absolute;top:14px;right:14px;width:28px;height:28px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;font-size:18px;color:#918b86;
+  transition:.15s;
+}
+.cj-modal-close:hover{background:var(--cj-paper-2);color:var(--cj-red);}
+.cj-share-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px;}
+.cj-share-row button{
+  flex:1;min-width:80px;padding:10px 6px;border:1px solid var(--cj-line);border-radius:4px;
+  font-size:12.5px;color:var(--cj-ink-2);transition:.15s;background:var(--cj-paper);
+}
+.cj-share-row button:hover{border-color:var(--cj-red);color:var(--cj-red);background:#fff;}
+
+/* ============ search feedback ============ */
+.cj-search-feedback{
+  max-width:1180px;margin:0 auto;padding:0 20px;
+  display:none;
+}
+.cj-search-feedback.show{display:block;}
+.cj-search-feedback-inner{
+  background:#fff;border:1px solid var(--cj-line);border-top:none;
+  padding:10px 20px;font-size:12.5px;color:var(--cj-gray);
+}
+.cj-search-feedback-inner b{color:var(--cj-red);}
+
+/* ============ responsive ============ */
+@media(max-width:1024px){
+  .cj-hero-grid{grid-template-columns:1fr;gap:34px;padding:44px 0;}
+  .cj-hero-copy h1{font-size:36px;}
+  .cj-intro-inner{grid-template-columns:1fr;gap:22px;}
+  .cj-intro-aside{position:static;}
+  .cj-focus-grid{grid-template-columns:1fr;}
+  .cj-focus-side{grid-template-rows:auto;}
+  .cj-focus-small{grid-template-columns:140px 1fr;}
+  .cj-video-grid{grid-template-columns:repeat(2,1fr);}
+  .cj-creator-grid{grid-template-columns:repeat(2,1fr);}
+  .cj-news-grid{grid-template-columns:1fr;gap:30px;}
+  .cj-contact{grid-template-columns:1fr;padding:34px 30px;}
+  .cj-contact-info{border-left:none;padding-left:0;border-top:1px solid rgba(255,255,255,.15);padding-top:24px;}
+  .cj-footer-grid{grid-template-columns:1fr 1fr;}
+  .cj-wall{grid-template-columns:repeat(4,1fr);}
+}
+@media(max-width:760px){
+  .cj-nav{display:none;}
+  .cj-search{display:none;}
+  .cj-burger{display:flex;}
+  .cj-header-inner{height:60px;gap:12px;}
+  .cj-announce-list{gap:0;flex-direction:column;gap:2px;font-size:12px;}
+  .cj-announce-list li:nth-child(n+2){display:none;}
+  .cj-announce-link{display:none;}
+  .cj-hero-copy h1{font-size:29px;}
+  .cj-hero-stats{gap:20px;}
+  .cj-hero-stats .cj-stat b{font-size:20px;}
+  .cj-hero-floating{left:8px;bottom:auto;top:10px;max-width:190px;padding:8px 12px;}
+  .cj-hero-floating b{font-size:12px;}
+  .cj-hero-floating span{font-size:10.5px;}
+  .cj-section{padding:44px 0;}
+  .cj-sec-head h2{font-size:21px;}
+  .cj-video-grid{grid-template-columns:1fr;}
+  .cj-creator-grid{grid-template-columns:1fr 1fr;}
+  .cj-creator .cj-bio{min-height:auto;}
+  .cj-review-grid{grid-template-columns:1fr;}
+  .cj-wall{grid-template-columns:repeat(2,1fr);grid-auto-rows:100px;}
+  .cj-wall-item.big{grid-column:span 2;grid-row:span 2;}
+  .cj-wall-item.wide{grid-column:span 2;}
+  .cj-contact{padding:26px 22px;}
+  .cj-footer-grid{grid-template-columns:1fr;gap:24px;}
+  .cj-faq .cj-faq-body{padding-left:20px;}
+  .cj-focus-small{grid-template-columns:110px 1fr;}
+  .cj-search-feedback-inner{font-size:12px;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ===== sticky top: announce + header ===== -->
+<div class="cj-sticky-top">
+
+  <div class="cj-announce" aria-label="站内公告">
+    <div class="cj-announce-inner">
+      <span class="cj-announce-tag">档案更新</span>
+      <ul class="cj-announce-list">
+        <li><b>11/18</b> 新增「2008 媒体影像时间轴 · 第三版」条目</li>
+        <li><b>11/15</b> 影像评论专栏上线第 12 期「公共事件与隐私边界」</li>
+        <li><b>11/10</b> 创作者档案「档案管理员 · 老周」上线</li>
+      </ul>
+      <a class="cj-announce-link" href="#cj-news">全部动态 ›</a>
+    </div>
+  </div>
+
+  <header class="cj-header">
+    <div class="cj-header-inner">
+      <a class="cj-logo" href="#cj-top" aria-label="陈冠希影像资料档案馆首页">
+        <svg class="cj-logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <rect width="40" height="40" rx="9" fill="#b91c1c"/>
+          <path d="M8 26 L20 8 L32 26 Z" fill="#fef2f2"/>
+          <rect x="13" y="28" width="14" height="3" rx="1.5" fill="#fef2f2"/>
+        </svg>
+        <span class="cj-logo-text">
+          <strong>陈冠希影像档案</strong>
+          <small>ARCHIVE OF CHEN</small>
+        </span>
+      </a>
+      <nav class="cj-nav" aria-label="主导航">
+        <a href="#cj-top">首页</a>
+        <a href="#cj-focus">焦点影像</a>
+        <a href="#cj-videos">视频档案</a>
+        <a href="#cj-creators">创作者</a>
+        <a href="#cj-news">档案动态</a>
+        <a href="#cj-faq">帮助</a>
+        <a href="#cj-contact">联系</a>
+      </nav>
+      <div class="cj-header-tools">
+        <div class="cj-search">
+          <input id="cjSearchInput" type="search" placeholder="搜索档案 / 影像 / 创作者" aria-label="搜索">
+          <button id="cjSearchBtn" type="button">搜索</button>
+        </div>
+        <button class="cj-burger" id="cjBurger" type="button" aria-label="展开导航" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="cj-mobile-nav" id="cjMobileNav">
+      <a href="#cj-top">首页</a>
+      <a href="#cj-focus">焦点影像</a>
+      <a href="#cj-videos">视频档案</a>
+      <a href="#cj-creators">创作者</a>
+      <a href="#cj-news">档案动态</a>
+      <a href="#cj-faq">帮助</a>
+      <a href="#cj-contact">联系</a>
+    </div>
+  </header>
+
+  <div class="cj-search-feedback" id="cjSearchFeedback" role="status" aria-live="polite">
+    <div class="cj-search-feedback-inner" id="cjSearchFeedbackInner"></div>
+  </div>
+
+</div>
+
+<main id="cj-top">
+
+  <!-- ===== HERO ===== -->
+  <section class="cj-hero" aria-labelledby="cj-hero-title">
+    <div class="cj-wrap">
+      <div class="cj-hero-grid">
+        <div class="cj-hero-copy">
+          <span class="cj-hero-badge">官方网站 · 影像资料档案</span>
+          <h1 id="cj-hero-title">陈冠希<em>影像档案</em>馆</h1>
+          <p class="cj-hero-lead">
+            以企业级档案标准，客观记录公众人物陈冠希的影像资料、事件脉络与媒体影像。这里不是猎奇入口，而是一座持续运营、公开可查的数字档案馆，为研究者、创作者与普通观众提供值得信赖的资料依据。
+          </p>
+          <div class="cj-hero-actions">
+            <a class="cj-btn cj-btn-primary" href="#cj-videos">浏览视频档案</a>
+            <a class="cj-btn cj-btn-ghost" href="#cj-intro">了解档案定位</a>
+            <button class="cj-btn cj-btn-ghost" type="button" data-cj-share>分享档案馆</button>
+          </div>
+          <div class="cj-hero-stats">
+            <div class="cj-stat"><b>1,286</b><span>影像条目</span></div>
+            <div class="cj-stat"><b>214</b><span>时间轴节点</span></div>
+            <div class="cj-stat"><b>17</b><span>持续运营年</span></div>
+          </div>
+        </div>
+
+        <div class="cj-hero-visual">
+          <figure class="cj-hero-frame">
+            <svg viewBox="0 0 640 400" role="img" aria-label="档案主视觉：胶片孔轨道与红色索引标记构成的影像档案封面">
+              <defs>
+                <linearGradient id="cjHeroBg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#1c1a19"/>
+                  <stop offset="1" stop-color="#3a1414"/>
+                </linearGradient>
+                <linearGradient id="cjHeroGlow" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#b91c1c" stop-opacity=".55"/>
+                  <stop offset="1" stop-color="#b91c1c" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="400" fill="url(#cjHeroBg)"/>
+              <rect width="640" height="400" fill="url(#cjHeroGlow)" opacity=".5"/>
+              <g fill="#0e0d0d">
+                <rect x="0" y="40" width="640" height="18"/>
+                <rect x="0" y="342" width="640" height="18"/>
+              </g>
+              <g fill="#4a4340">
+                <rect x="18" y="44" width="14" height="10" rx="2"/><rect x="52" y="44" width="14" height="10" rx="2"/>
+                <rect x="86" y="44" width="14" height="10" rx="2"/><rect x="120" y="44" width="14" height="10" rx="2"/>
+                <rect x="154" y="44" width="14" height="10" rx="2"/><rect x="188" y="44" width="14" height="10" rx="2"/>
+                <rect x="222" y="44" width="14" height="10" rx="2"/><rect x="256" y="44" width="14" height="10" rx="2"/>
+                <rect x="290" y="44" width="14" height="10" rx="2"/><rect x="324" y="44" width="14" height="10" rx="2"/>
+                <rect x="358" y="44" width="14" height="10" rx="2"/><rect x="392" y="44" width="14" height="10" rx="2"/>
+                <rect x="426" y="44" width="14" height="10" rx="2"/><rect x="460" y="44" width="14" height="10" rx="2"/>
+                <rect x="494" y="44" width="14" height="10" rx="2"/><rect x="528" y="44" width="14" height="10" rx="2"/>
+                <rect x="562" y="44" width="14" height="10" rx="2"/><rect x="596" y="44" width="14" height="10" rx="2"/>
+                <rect x="18" y="346" width="14" height="10" rx="2"/><rect x="52" y="346" width="14" height="10" rx="2"/>
+                <rect x="86" y="346" width="14" height="10" rx="2"/><rect x="120" y="346" width="14" height="10" rx="2"/>
+                <rect x="154" y="346" width="14" height="10" rx="2"/><rect x="188" y="346" width="14" height="10" rx="2"/>
+                <rect x="222" y="346" width="14" height="10" rx="2"/><rect x="256" y="346" width="14" height="10" rx="2"/>
+                <rect x="290" y="346" width="14" height="10" rx="2"/><rect x="324" y="346" width="14" height="10" rx="2"/>
+                <rect x="358" y="346" width="14" height="10" rx="2"/><rect x="392" y="346" width="14" height="10" rx="2"/>
+                <rect x="426" y="346" width="14" height="10" rx="2"/><rect x="460" y="346" width="14" height="10" rx="2"/>
+                <rect x="494" y="346" width="14" height="10" rx="2"/><rect x="528" y="346" width="14" height="10" rx="2"/>
+                <rect x="562" y="346" width="14" height="10" rx="2"/><rect x="596" y="346" width="14" height="10" rx="2"/>
+              </g>
+              <g opacity=".85">
+                <rect x="70" y="96" width="200" height="126" rx="4" fill="#0f0e0e" stroke="#5a524e" stroke-width="1.5"/>
+                <rect x="82" y="108" width="176" height="102" rx="2" fill="#241f1e"/>
+                <path d="M120 186 L162 132 L204 186 Z" fill="#b91c1c" opacity=".85"/>
+                <circle cx="216" cy="130" r="9" fill="#fca5a5" opacity=".7"/>
+              </g>
+              <g opacity=".7">
+                <rect x="300" y="96" width="126" height="92" rx="4" fill="#0f0e0e" stroke="#5a524e" stroke-width="1.5"/>
+                <rect x="310" y="106" width="106" height="72" rx="2" fill="#241f1e"/>
+                <path d="M330 168 L358 128 L386 168 Z" fill="#e5e0dc" opacity=".5"/>
+              </g>
+              <g opacity=".7">
+                <rect x="446" y="96" width="126" height="92" rx="4" fill="#0f0e0e" stroke="#5a524e" stroke-width="1.5"/>
+                <rect x="456" y="106" width="106" height="72" rx="2" fill="#241f1e"/>
+                <circle cx="500" cy="142" r="20" fill="none" stroke="#e5e0dc" stroke-width="2" opacity=".45"/>
+              </g>
+              <rect x="70" y="244" width="502" height="56" rx="4" fill="#0f0e0e" stroke="#5a524e" stroke-width="1.5"/>
+              <g fill="#b91c1c">
+                <rect x="82" y="258" width="8" height="28" rx="2"/>
+              </g>
+              <g fill="#6b625d" font-family="monospace" font-size="11">
+                <text x="104" y="270">ARCHIVE / CHEN / 2004-2026</text>
+                <text x="104" y="288" fill="#9a8f89">SUBJECT: PUBLIC FIGURE · STATUS: ONGOING</text>
+              </g>
+              <text x="500" y="278" fill="#b91c1c" font-family="monospace" font-size="15" font-weight="bold">A-01</text>
+            </svg>
+          </figure>
+          <div class="cj-hero-floating">
+            <b>持续更新 · 2026.11</b>
+            <span>时间轴第三版已上线，新增 38 个节点</span>
+          </div>
+          <div class="cj-hero-caption">
+            <span>主视觉 / 影像档案索引卡</span>
+            <span>编号 CJ-H-0001</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INTRO / DEEP EXPLANATION ===== -->
+  <section class="cj-intro" id="cj-intro" aria-labelledby="cj-intro-title">
+    <div class="cj-wrap">
+      <div class="cj-intro-inner">
+        <aside class="cj-intro-aside">
+          <div class="cj-aside-rule"></div>
+          <h2 id="cj-intro-title">档案定位与深度解析</h2>
+          <p>本页为陈冠希影像资料档案馆官方网站的定位说明，梳理事件背景、公共讨论与影像资料的整理逻辑。</p>
+        </aside>
+
+        <div class="cj-prose">
+          <h3>为什么建立这座影像档案</h3>
+          <p>
+            陈冠希作为公众人物，其职业生涯横跨音乐、影视与潮流文化多个领域，而围绕他的公众记忆，也长期被一类特殊事件所影响。2008 年前后，一组涉及私人领域的影像资料在互联网上被大规模传播，成为中文互联网早期最具代表性的公共事件之一。围绕这件事，舆论场中出现过大量情绪化、碎片化甚至失真的叙述，而真正能够被查证、被系统整理的信息，却长期散落在旧论坛、旧新闻与私人收藏之间。本档案馆正是在这样的背景下成立，作为一家持续运营、公开可查的影像资料官方网站，我们试图用企业级的档案标准，把这件事放回它应有的位置：不是猎奇，而是资料。
+          </p>
+          <h3>我们记录什么，不记录什么</h3>
+          <p>
+            本档案的记录对象，是围绕该事件形成的<strong>公共影像资料</strong>，包括媒体报道影像、当事人公开发言与声明、法律与行业规则的后续讨论、以及相关影视音乐作品的公开资料。我们明确不收录、不索引、不提供任何涉及当事人隐私的私人影像内容，也不对所谓"全部照片"一类表述做任何形式的检索引导。这一原则既来自对个人隐私权的基本尊重，也来自我们作为内容平台的社会责任：一个值得信赖的档案机构，首先要清楚边界在哪里。档案馆的每一份条目都标注来源、时间与可信度等级，供研究者自行判断。
+          </p>
+          <h3>时间轴是如何被整理的</h3>
+          <p>
+            档案团队以公开新闻数据库、当年的媒体报道留档、当事人及所属公司声明、以及可核实的行业讨论为素材，按时间顺序建立节点，目前时间轴第三版共收录 214 个节点，按"事件发生—媒体反应—当事人回应—行业规则变化—长期影响"五个维度分层标注。我们坚持每条记录都至少有两个独立来源可以交叉验证，无法验证的传闻单独列入"待考"区，并明确标注其未经验证的状态。这套方法借鉴自新闻机构的档案编辑流程，也是我们希望为行业提供的一种可参考范式：面对复杂的公共事件，专业、克制、可复现，比情绪更重要。
+          </p>
+          <h3>关于陈冠希的其他影像</h3>
+          <p>
+            需要说明的是，本档案馆的主要篇幅并不仅限于单一事件。在事件之外，陈冠希的音乐作品、影视片段、品牌与潮流文化相关内容，同样是重要的公共文化资料。档案中收录了他的音乐现场影像记录、早期影视作品的公开花絮、以及他在潮流文化领域的公开活动影像。这些内容构成了更完整的人物档案，也让观众得以从多个维度理解一个公众人物的职业生涯。我们认为，把一个人压缩成一件事，本身就是一种不完整的记录方式；而档案馆的使命，正是拒绝这种压缩。
+          </p>
+          <h3>持续运营与开放共享</h3>
+          <p>
+            档案馆自 2009 年起持续运营，至今已走过十七个年头。我们以官方网站的形式公开条目目录、更新时间与编辑原则，接受来自研究者、创作者与普通观众的反馈与纠错。所有影像条目均标注引用规范，允许在注明来源的前提下用于非商业的研究与评论写作。我们相信，一个公共事件的档案，只有保持开放与可核查，才能真正沉淀为行业的共同记忆；也只有这样，后来者在回望这段历史时，才能看到清晰的路径，而不是一地碎片。
+          </p>
+          <p>
+            作为一家以影像为核心的内容平台，我们同样关注创作生态：档案馆定期邀请创作者围绕"公共事件与影像伦理""媒体报道中的隐私边界"等议题投稿，形成专题影像与评论文章。这些内容与档案条目互为补充，让资料不止于资料，也成为一次持续的公共讨论。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOCUS ===== -->
+  <section class="cj-section" id="cj-focus" aria-labelledby="cj-focus-title">
+    <div class="cj-wrap">
+      <div class="cj-sec-head">
+        <div>
+          <span class="cj-eyebrow">FOCUS ARCHIVE</span>
+          <h2 id="cj-focus-title">焦点影像档案</h2>
+          <p>本期由档案编辑组精选，覆盖事件时间轴、媒体影像与公开讨论三类内容。</p>
+        </div>
+        <a class="cj-more" href="#cj-videos">查看全部条目 ›</a>
+      </div>
+
+      <div class="cj-focus-grid">
+        <article class="cj-focus-main">
+          <svg viewBox="0 0 760 420" role="img" aria-label="焦点封面：2008年媒体影像时间轴长卷，报纸版面与时间刻度叠加">
+            <defs>
+              <linearGradient id="cjFocusBg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#141414"/>
+                <stop offset="1" stop-color="#2e1a1a"/>
+              </linearGradient>
+            </defs>
+            <rect width="760" height="420" fill="url(#cjFocusBg)"/>
+            <g opacity=".22" stroke="#f5e9e5" stroke-width="1">
+              <line x1="0" y1="90" x2="760" y2="90"/><line x1="0" y1="180" x2="760" y2="180"/>
+              <line x1="0" y1="270" x2="760" y2="270"/><line x1="0" y1="360" x2="760" y2="360"/>
+            </g>
+            <g fill="#f5e9e5" opacity=".9">
+              <rect x="56" y="70" width="150" height="96" rx="3" opacity=".18"/>
+              <rect x="222" y="70" width="150" height="96" rx="3" opacity=".3"/>
+              <rect x="388" y="70" width="150" height="96" rx="3" opacity=".18"/>
+              <rect x="554" y="70" width="150" height="96" rx="3" opacity=".26"/>
+            </g>
+            <g fill="#b91c1c">
+              <circle cx="131" cy="200" r="7"/><circle cx="297" cy="200" r="7"/>
+              <circle cx="463" cy="200" r="7"/><circle cx="629" cy="200" r="7"/>
+            </g>
+            <line x1="56" y1="200" x2="704" y2="200" stroke="#b91c1c" stroke-width="2" opacity=".55"/>
+            <g font-family="monospace" font-size="12" fill="#c9bfba">
+              <text x="104" y="222">2008.01</text><text x="270" y="222">2008.02</text>
+              <text x="436" y="222">2008.03</text><text x="602" y="222">2008.06</text>
+            </g>
+            <g font-family="monospace" font-size="11" fill="#8f847e">
+              <text x="56" y="110">MEDIA</text><text x="222" y="110">STATEMENT</text>
+              <text x="388" y="110">LAW</text><text x="554" y="110">IMPACT</text>
+            </g>
+            <rect x="56" y="272" width="648" height="86" rx="4" fill="#0d0d0d" stroke="#4a4340"/>
+            <g font-family="monospace" font-size="12" fill="#a89d97">
+              <text x="76" y="300">TIMELINE v3.0 · 214 NODES</text>
+              <text x="76" y="322">SOURCE: PUBLIC MEDIA ARCHIVE / VERIFIED x2</text>
+              <text x="76" y="344" fill="#fca5a5">EDITORIAL NOTE: PRIVACY RESPECTED</text>
+            </g>
+            <g fill="#f5e9e5" opacity=".5">
+              <rect x="560" y="292" width="120" height="8" rx="4"/>
+              <rect x="560" y="310" width="86" height="8" rx="4"/>
+              <rect x="560" y="328" width="104" height="8" rx="4"/>
+            </g>
+          </svg>
+          <div class="cj-focus-overlay">
+            <span class="cj-tag">重点档案</span>
+            <h3>2008 媒体影像时间轴 · 第三版</h3>
+            <p>按五个维度重新整理当年的公开报道与声明影像，新增 38 个可交叉验证的节点，并对 21 条历史传闻标注"待考"。</p>
+            <div class="cj-focus-meta">
+              <span>档案编辑组</span><span>更新于 2026-11-18</span><span>阅读 4.2 万</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="cj-focus-side">
+          <article class="cj-focus-small">
+            <div class="cj-thumb">
+              <svg viewBox="0 0 240 160" role="img" aria-label="封面：公开声明影像资料，讲台与麦克风剪影">
+                <rect width="240" height="160" fill="#1d1b1a"/>
+                <rect x="0" y="112" width="240" height="48" fill="#2a2422"/>
+                <rect x="76" y="58" width="88" height="56" rx="3" fill="#3a3330"/>
+                <circle cx="120" cy="46" r="12" fill="#6b625d"/>
+                <rect x="66" y="72" width="6" height="42" fill="#b91c1c"/>
+                <rect x="168" y="72" width="6" height="42" fill="#b91c1c"/>
+                <path d="M104 30 L120 12 L136 30 Z" fill="#fca5a5" opacity=".7"/>
+              </svg>
+            </div>
+            <div class="cj-body">
+              <h3>当事人公开声明的影像留档与语境还原</h3>
+              <p>整理当年公开发布的声明影像，还原发布场景与时间顺序，供研究者对照。</p>
+              <div class="cj-mini-meta">档案组 · 8,912 次查阅</div>
+            </div>
+          </article>
+
+          <article class="cj-focus-small">
+            <div class="cj-thumb">
+              <svg viewBox="0 0 240 160" role="img" aria-label="封面：法律与隐私边界讨论，天平与数据流图示">
+                <rect width="240" height="160" fill="#171a1c"/>
+                <line x1="120" y1="34" x2="120" y2="126" stroke="#5f6b72" stroke-width="3"/>
+                <line x1="56" y1="56" x2="184" y2="56" stroke="#5f6b72" stroke-width="3"/>
+                <circle cx="56" cy="56" r="4" fill="#b91c1c"/>
+                <circle cx="184" cy="56" r="4" fill="#b91c1c"/>
+                <path d="M30 92 L56 56 L82 92 Z" fill="none" stroke="#9fb0ba" stroke-width="2"/>
+                <path d="M158 92 L184 56 L210 92 Z" fill="none" stroke="#9fb0ba" stroke-width="2"/>
+                <rect x="40" y="126" width="160" height="6" rx="3" fill="#33404a"/>
+                <g fill="#b91c1c" opacity=".8">
+                  <rect x="86" y="100" width="6" height="26"/><rect x="100" y="86" width="6" height="40"/>
+                  <rect x="114" y="104" width="6" height="22"/><rect x="128" y="94" width="6" height="32"/>
+                </g>
+              </svg>
+            </div>
+            <div class="cj-body">
+              <h3>公共事件与隐私边界：一次行业讨论</h3>
+              <p>从法律与伦理两个层面复盘事件对中文互联网内容规则的影响。</p>
+              <div class="cj-mini-meta">专栏 · 6,375 次查阅</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VIDEO STREAM ===== -->
+  <section class="cj-section cj-section-alt" id="cj-videos" aria-labelledby="cj-videos-title">
+    <div class="cj-wrap">
+      <div class="cj-sec-head">
+        <div>
+          <span class="cj-eyebrow">VIDEO ARCHIVE</span>
+          <h2 id="cj-videos-title">视频档案精选</h2>
+          <p>所有条目均标注来源与可信度，页面不提供任何私人影像内容。点击卡片可查看条目摘要。</p>
+        </div>
+      </div>
+
+      <div class="cj-video-grid" id="cjVideoGrid">
+
+        <article class="cj-card" data-cj-title="事件时间轴影像长卷">
+          <div class="cj-cover">
+            <svg viewBox="0 0 320 180" role="img" aria-label="视频封面：2008年事件时间轴影像长卷，横向时间刻度与红色标记">
+              <rect width="320" height="180" fill="#151313"/>
+              <g stroke="#4a4340" stroke-width="1" opacity=".7">
+                <line x1="0" y1="45" x2="320" y2="45"/><line x1="0" y1="90" x2="320" y2="90"/><line x1="0" y1="135" x2="320" y2="135"/>
+              </g>
+              <line x1="24" y1="104" x2="296" y2="104" stroke="#b91c1c" stroke-width="3"/>
+              <g fill="#b91c1c"><circle cx="52" cy="104" r="6"/><circle cx="120" cy="104" r="6"/><circle cx="188" cy="104" r="6"/><circle cx="256" cy="104" r="6"/></g>
+              <g font-family="monospace" font-size="9" fill="#a89d97"><text x="36" y="126">01</text><text x="104" y="126">02</text><text x="172" y="126">03</text><text x="240" y="126">06</text></g>
+              <rect x="24" y="24" width="126" height="44" rx="3" fill="#241f1e" stroke="#4a4340"/>
+              <text x="36" y="44" font-family="monospace" font-size="10" fill="#d9d2cd">TIMELINE v3</text>
+              <text x="36" y="58" font-family="monospace" font-size="9" fill="#8f847e">214 NODES</text>
+              <path d="M270 30 L292 54 L270 78 Z" fill="#b91c1c" opacity=".8"/>
+            </svg>
+            <span class="cj-tag">时间轴</span>
+            <span class="cj-dur">12:40</span>
+            <span class="cj-play" aria-hidden="true"><i></i></span>
+          </div>
+          <div class="cj-card-body">
+            <h3>事件时间轴影像长卷</h3>
+            <p class="cj-desc">以长卷形式串联 2008 年前后的公开影像资料，按五个维度分层标注，每节点附来源说明。</p>
+            <div class="cj-card-foot">
+              <span class="cj-avatar" style="background:#b91c1c">档</span>
+              <span class="cj-author">档案编辑组</span>
+              <span class="cj-acts">
+                <button class="cj-act" type="button" data-cj-like aria-label="点赞"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 10v11M7 10l4-7a2 2 0 0 1 3.5 1.5L13 9h6a2 2 0 0 1 2 2.3l-1.4 8A2 2 0 0 1 17.6 21H7"/></svg><span class="cj-like-num">328</span></button>
+                <button class="cj-act" type="button" data-cj-fav aria-label="收藏"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></button>
+                <button class="cj-act" type="button" data-cj-comment aria-label="评论">评</button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="cj-card" data-cj-title="公开声明影像与语境还原">
+          <div class="cj-cover">
+            <svg viewBox="0 0 320 180" role="img" aria-label="视频封面：公开声明场景，深色讲台与暖色聚光灯">
+              <rect width="320" height="180" fill="#1a1817"/>
+              <path d="M160 0 L230 180 L90 180 Z" fill="#2b2624"/>
+              <ellipse cx="160" cy="150" rx="90" ry="22" fill="#241f1e"/>
+              <rect x="112" y="78" width="96" height="60" rx="4" fill="#3a3330"/>
+              <circle cx="160" cy="62" r="13" fill="#6b625d"/>
+              <rect x="104" y="92" width="5" height="46" fill="#b91c1c"/>
+              <rect x="211" y="92" width="5" height="46" fill="#b91c1c"/>
+              <path d="M140 36 L160 18 L180 36 Z" fill="#fca5a5" opacity=".55"/>
+              <g fill="#8f847e" font-family="monospace" font-size="9"><text x="20" y="168">STATEMENT / 2008</text></g>
+            </svg>
+            <span class="cj-tag">声明留档</span>
+            <span class="cj-dur">08:15</span>
+            <span class="cj-play" aria-hidden="true"><i></i></span>
+          </div>
+          <div class="cj-card-body">
+            <h3>公开声明影像与语境还原</h3>
+            <p class="cj-desc">整理当年公开发布的声明影像，对照媒体转述还原语境，避免信息在转述中失真。</p>
+            <div class="cj-card-foot">
+              <span class="cj-avatar" style="background:#2a2422">档</span>
+              <span class="cj-author">档案编辑组</span>
+              <span class="cj-acts">
+                <button class="cj-act" type="button" data-cj-like><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 10v11M7 10l4-7a2 2 0 0 1 3.5 1.5L13 9h6a2 2 0 0 1 2 2.3l-1.4 8A2 2 0 0 1 17.6 21H7"/></svg><span class="cj-like-num">214</span></button>
+                <button class="cj-act" type="button" data-cj-fav><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></button>
+                <button class="cj-act" type="button" data-cj-comment>评</button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="cj-card" data-cj-title="法律与隐私边界讨论影像">
+          <div class="cj-cover">
+            <svg viewBox="0 0 320 180" role="img" aria-label="视频封面：法律与隐私边界，天平与二进制数据流">
+              <rect width="320" height="180" fill="#141719"/>
+              <line x1="160" y1="36" x2="160" y2="146" stroke="#5f6b72" stroke-width="4"/>
+              <line x1="76" y1="62" x2="244" y2="62" stroke="#5f6b72" stroke-width="4"/>
+              <circle cx="76" cy="62" r="5" fill="#b91c1c"/><circle cx="244" cy="62" r="5" fill="#b91c1c"/>
+              <path d="M42 104 L76 62 L110 104 Z" fill="none" stroke="#9fb0ba" stroke-width="2.5"/>
+              <path d="M210 104 L244 62 L278 104 Z" fill="none" stroke="#9fb0ba" stroke-width="2.5"/>
+              <rect x="60" y="146" width="200" height="6" rx="3" fill="#33404a"/>
+              <g fill="#b91c1c" opacity=".75" font-family="monospace" font-size="10">
+                <text x="24" y="30">0110</text><text x="264" y="30">1001</text><text x="24" y="166">101</text><text x="268" y="166">110</text>
+              </g>
+            </svg>
+            <span class="cj-tag">行业讨论</span>
+            <span class="cj-dur">15:02</span>
+            <span class="cj-play" aria-hidden="true"><i></i></span>
+          </div>
+          <div class="cj-card-body">
+            <h3>法律与隐私边界讨论影像</h3>
+            <p class="cj-desc">从法律与伦理两个层面复盘事件，讨论公共事件中媒体影像的边界与责任。</p>
+            <div class="cj-card-foot">
+              <span class="cj-avatar" style="background:#33404a">研</span>
+              <span class="cj-author">档案研究员</span>
+              <span class="cj-acts">
+                <button class="cj-act" type="button" data-cj-like><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 10v11M7 10l4-7a2 2 0 0 1 3.5 1.5L13 9h6a2 2 0 0 1 2 2.3l-1.4 8A2 2 0 0 1 17.6 21H7"/></svg><span class="cj-like-num">176</span></button>
+                <button class="cj-act" type="button" data-cj-fav><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></button>
+                <button class="cj-act" type="button" data-cj-comment>评</button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="cj-card" data-cj-title="音乐现场影像记录">
+          <div class="cj-cover">
+            <svg viewBox="0 0 320 180" role="img" aria-label="视频封面：音乐现场舞台剪影，紫色与红色灯光交错">
+              <rect width="320" height="180" fill="#171420"/>
+              <path d="M0 180 L0 90 L320 60 L320 180 Z" fill="#221c2e"/>
+              <g fill="#b91c1c" opacity=".8">
+                <rect x="36" y="96" width="8" height="60" rx="4"/>
+                <rect x="276" y="82" width="8" height="74" rx="4"/>
+              </g>
+              <g fill="#6d5a8c" opacity=".85">
+                <rect x="70" y="118" width="10" height="38" rx="3"/>
+                <rect x="92" y="104" width="10" height="52" rx="3"/>
+                <rect x="114" y="122" width="10" height="34" rx="3"/>
+              </g>
+              <circle cx="160" cy="78" r="22" fill="#3b2f4d"/>
+              <path d="M148 78 L172 68 L172 88 Z" fill="#fca5a5" opacity=".8"/>
+              <g stroke="#8a74ad" stroke-width="2" opacity=".45">
+                <line x1="0" y1="140" x2="320" y2="126"/><line x1="0" y1="156" x2="320" y2="146"/>
+              </g>
+            </svg>
+            <span class="cj-tag">音乐现场</span>
+            <span class="cj-dur">05:38</span>
+            <span class="cj-play" aria-hidden="true"><i></i></span>
+          </div>
+          <div class="cj-card-body">
+            <h3>音乐现场影像记录</h3>
+            <p class="cj-desc">收录公开演出中的音乐现场片段，作为人物职业生涯资料的一部分，与事件档案互为补充。</p>
+            <div class="cj-card-foot">
+              <span class="cj-avatar" style="background:#6d5a8c">现</span>
+              <span class="cj-author">影像整理员</span>
+              <span class="cj-acts">
+                <button class="cj-act" type="button" data-cj-like><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 10v11M7 10l4-7a2 2 0 0 1 3.5 1.5L13 9h6a2 2 0 0 1 2 2.3l-1.4 8A2 2 0 0 1 17.6 21H7"/></svg><span class="cj-like-num">143</span></button>
+                <button class="cj-act" type="button" data-cj-fav><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></button>
+                <button class="cj-act" type="button" data-cj-comment>评</button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="cj-card" data-cj-title="潮流文化公开活动影像">
+          <div class="cj-cover">
+            <svg viewBox="0 0 320 180" role="img" aria-label="视频封面：潮流文化活动现场，几何色块与展墙">
+              <rect width="320" height="180" fill="#f0e9e3"/>
+              <rect x="0" y="0" width="320" height="46" fill="#141414"/>
+              <rect x="24" y="66" width="86" height="86" fill="#b91c1c"/>
+              <rect x="124" y="86" width="58" height="66" fill="#141414"/>
+              <rect x="196" y="66" width="42" height="42" fill="#a16207"/>
+              <rect x="250" y="86" width="46" height="66" fill="#6b625d"/>
+              <rect x="24" y="160" width="272" height="4" fill="#141414"/>
+              <text x="24" y="34" font-family="monospace" font-size="12" fill="#f0e9e3">CULTURE / STREET</text>
+            </svg>
+            <span class="cj-tag">潮流文化</span>
+            <span class="cj-dur">06:24</span>
+            <span class="cj-play" aria-hidden="true"><i></i></span>
+          </div>
+          <div class="cj-card-body">
+            <h3>潮流文化公开活动影像</h3>
+            <p class="cj-desc">以公开活动影像呈现人物在潮流文化领域的工作轨迹，作为人物档案的延伸部分。</p>
+            <div class="cj-card-foot">
+              <span class="cj-avatar" style="background:#141414">文</span>
+              <span class="cj-author">文化观察员</span>
+              <span class="cj-acts">
+                <button class="cj-act" type="button" data-cj-like><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 10v11M7 10l4-7a2 2 0 0 1 3.5 1.5L13 9h6a2 2 0 0 1 2 2.3l-1.4 8A2 2 0 0 1 17.6 21H7"/></svg><span class="cj-like-num">98</span></button>
+                <button class="cj-act" type="button" data-cj-fav><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></button>
+                <button class="cj-act" type="button" data-cj-comment>评</button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="cj-card" data-cj-title="早期影视作品公开花絮">
+          <div class="cj-cover">
+            <svg viewBox="0 0 320 180" role="img" aria-label="视频封面：影视作品花絮，胶片盘与场记板">
+              <rect width="320" height="180" fill="#e7e2de"/>
+              <circle cx="96" cy="90" r="52" fill="none" stroke="#3a3330" stroke-width="10"/>
+              <circle cx="96" cy="90" r="14" fill="#3a3330"/>
+              <g fill="#3a3330">
+                <circle cx="96" cy="52" r="6"/><circle cx="129" cy="66" r="6"/><circle cx="134" cy="102" r="6"/>
+                <circle cx="112" cy="129" r="6"/><circle cx="80" cy="129" r="6"/><circle cx="58" cy="102" r="6"/>
+                <circle cx="63" cy="66" r="6"/>
+              </g>
+              <rect x="184" y="56" width="112" height="70" rx="3" fill="#141414"/>
+              <g stroke="#f0e9e3" stroke-width="2"><line x1="184" y1="76" x2="296" y2="76"/><line x1="184" y1="96" x2="296" y2="96"/></g>
+              <path d="M184 56 L216 40 L328 40 L296 56 Z" fill="#b91c1c"/>
+              <text x="196" y="118" font-family="monospace" font-size="10" fill="#f0e9e3">SCENE 04</text>
+            </svg>
+            <span class="cj-tag">影视资料</span>
+            <span class="cj-dur">04:51</span>
+            <span class="cj-play" aria-hidden="true"><i></i></span>
+          </div>
+          <div class="cj-card-body">
+            <h3>早期影视作品公开花絮</h3>
+            <p class="cj-desc">公开可查的影视花絮片段，以时间顺序呈现，帮助理解人物职业生涯的完整脉络。</p>
+            <div class="cj-card-foot">
+              <span class="cj-avatar" style="background:#3a3330">影</span>
+              <span class="cj-author">影像整理员</span>
+              <span class="cj-acts">
+                <button class="cj-act" type="button" data-cj-like><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 10v11M7 10l4-7a2 2 0 0 1 3.5 1.5L13 9h6a2 2 0 0 1 2 2.3l-1.4 8A2 2 0 0 1 17.6 21H7"/></svg><span class="cj-like-num">87</span></button>
+                <button class="cj-act" type="button" data-cj-fav><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg></button>
+                <button class="cj-act" type="button" data-cj-comment>评</button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="cj-topics" aria-label="热门话题">
+        <a class="cj-topic-chip" href="#cj-videos"># 时间轴</a>
+        <a class="cj-topic-chip" href="#cj-videos"># 媒体影像</a>
+        <a class="cj-topic-chip" href="#cj-videos"># 隐私边界</a>
+        <a class="cj-topic-chip" href="#cj-videos"># 公开声明</a>
+        <a class="cj-topic-chip" href="#cj-videos"># 音乐现场</a>
+        <a class="cj-topic-chip" href="#cj-videos"># 潮流文化</a>
+        <a class="cj-topic-chip" href="#cj-videos"># 影视花絮</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CREATORS ===== -->
+  <section class="cj-section" id="cj-creators" aria-labelledby="cj-creators-title">
+    <div class="cj-wrap">
+      <div class="cj-sec-head">
+        <div>
+          <span class="cj-eyebrow">CREATOR MATRIX</span>
+          <h2 id="cj-creators-title">档案创作者矩阵</h2>
+          <p>他们以研究、写作与影像整理的方式参与档案建设。点击卡片可查看创作者简介。</p>
+        </div>
+        <a class="cj-more" href="#cj-contact">申请成为创作者 ›</a>
+      </div>
+
+      <div class="cj-creator-grid">
+        <article class="cj-creator" data-cj-creator="老周" data-cj-creator-bio="档案编辑组负责人，媒体研究背景。负责时间轴条目的来源核验与编辑原则维护，主张档案应以可复核为第一标准。">
+          <div class="cj-avatar-lg" style="background:#b91c1c">周</div>
+          <h3>老周</h3>
+          <div class="cj-role">档案管理员 · 编辑组</div>
+          <p class="cj-bio">负责时间线条目的来源核验与编辑原则维护，主张档案应以可复核为第一标准。</p>
+          <div class="cj-nums"><span><b>86</b>条目</span><span><b>1.2万</b>关注</span></div>
+        </article>
+
+        <article class="cj-creator" data-cj-creator="林序" data-cj-creator-bio="法律与传播研究者，长期关注公共事件中的隐私边界问题。为本档案撰写"法律视角"系列评述，强调规则与同理心并重。">
+          <div class="cj-avatar-lg" style="background:#33404a">林</div>
+          <h3>林序</h3>
+          <div class="cj-role">特约研究员 · 法律视角</div>
+          <p class="cj-bio">法律与传播研究者，长期关注公共事件中的隐私边界，撰写"法律视角"系列评述。</p>
+          <div class="cj-nums"><span><b>42</b>条目</span><span><b>9,480</b>关注</span></div>
+        </article>
+
+        <article class="cj-creator" data-cj-creator="阿灯" data-cj-creator-bio="影像整理志愿者，擅长旧媒体资料的数字化与标注。负责声明影像与影视花絮的画质修复与说明文字撰写。">
+          <div class="cj-avatar-lg" style="background:#6d5a8c">灯</div>
+          <h3>阿灯</h3>
+          <div class="cj-role">影像整理员 · 数字化</div>
+          <p class="cj-bio">擅长旧媒体资料的数字化与标注，负责声明影像与影视花絮的画质修复与说明撰写。</p>
+          <div class="cj-nums"><span><b>117</b>条目</span><span><b>7,210</b>关注</span></div>
+        </article>
+
+        <article class="cj-creator" data-cj-creator="陈默" data-cj-creator-bio="文化评论写作者，关注潮流文化与公众人物形象变迁。为本档案提供人物职业脉络的评论文章与口述整理。">
+          <div class="cj-avatar-lg" style="background:#a16207">默</div>
+          <h3>陈默</h3>
+          <div class="cj-role">文化观察员 · 评论</div>
+          <p class="cj-bio">关注潮流文化与公众人物形象变迁，提供人物职业脉络的评论文章与口述整理。</p>
+          <div class="cj-nums"><span><b>35</b>条目</span><span><b>5,840</b>关注</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WALL ===== -->
+  <section class="cj-section cj-section-alt" id="cj-wall" aria-labelledby="cj-wall-title">
+    <div class="cj-wrap">
+      <div class="cj-sec-head">
+        <div>
+          <span class="cj-eyebrow">IMAGE WALL</span>
+          <h2 id="cj-wall-title">影像墙 · 资料片段</h2>
+          <p>来自档案条目的静态影像片段，均标注来源类别，不包含任何私人影像内容。</p>
+        </div>
+      </div>
+
+      <div class="cj-wall">
+        <figure class="cj-wall-item big">
+          <svg viewBox="0 0 320 260" role="img" aria-label="影像墙大图：档案室书架与编号文件盒">
+            <rect width="320" height="260" fill="#e5ded8"/>
+            <rect x="0" y="0" width="320" height="52" fill="#141414"/>
+            <text x="18" y="34" font-family="monospace" font-size="13" fill="#f0e9e3">ARCHIVE SHELF</text>
+            <g>
+              <rect x="22" y="76" width="42" height="72" fill="#b91c1c"/>
+              <rect x="70" y="88" width="34" height="60" fill="#6b625d"/>
+              <rect x="110" y="70" width="46" height="78" fill="#33404a"/>
+              <rect x="162" y="90" width="30" height="58" fill="#a16207"/>
+              <rect x="198" y="78" width="44" height="70" fill="#3a3330"/>
+              <rect x="248" y="96" width="26" height="52" fill="#8f847e"/>
+            </g>
+            <rect x="22" y="160" width="276" height="10" fill="#3a3330"/>
+            <g>
+              <rect x="22" y="186" width="36" height="52" fill="#8f847e"/>
+              <rect x="64" y="176" width="48" height="62" fill="#b91c1c" opacity=".85"/>
+              <rect x="118" y="192" width="30" height="46" fill="#33404a"/>
+              <rect x="154" y="180" width="52" height="58" fill="#e5ded8" stroke="#3a3330" stroke-width="2"/>
+              <rect x="212" y="188" width="34" height="50" fill="#a16207" opacity=".85"/>
+              <rect x="252" y="178" width="42" height="60" fill="#3a3330"/>
+            </g>
+          </svg>
+          <figcaption class="cj-wall-label">档案室书架 · 编号文件盒</figcaption>
+        </figure>
+
+        <figure class="cj-wall-item wide">
+          <svg viewBox="0 0 320 120" role="img" aria-label="影像墙：旧报纸版面缩略图">
+            <rect width="320" height="120" fill="#f2ece6"/>
+            <rect x="14" y="12" width="120" height="10" fill="#141414"/>
+            <g fill="#b8aea6">
+              <rect x="14" y="32" width="140" height="6"/><rect x="14" y="44" width="120" height="6"/>
+              <rect x="14" y="56" width="150" height="6"/><rect x="14" y="68" width="96" height="6"/>
+              <rect x="14" y="80" width="134" height="6"/><rect x="14" y="92" width="110" height="6"/>
+            </g>
+            <rect x="170" y="24" width="136" height="80" fill="#d8d0c9"/>
+            <rect x="186" y="44" width="60" height="6" fill="#141414"/>
+            <rect x="186" y="56" width="100" height="4" fill="#9a8f89"/>
+            <rect x="186" y="66" width="88" height="4" fill="#9a8f89"/>
+          </svg>
+          <figcaption class="cj-wall-label">旧报纸版面留档</figcaption>
+        </figure>
+
+        <figure class="cj-wall-item">
+          <svg viewBox="0 0 160 120" role="img" aria-label="影像墙小图：麦克风特写">
+            <rect width="160" height="120" fill="#1d1b1a"/>
+            <rect x="72" y="16" width="16" height="48" rx="8" fill="#6b625d"/>
+            <rect x="76" y="64" width="8" height="34" fill="#3a3330"/>
+            <ellipse cx="80" cy="100" rx="26" ry="6" fill="#2b2624"/>
+            <circle cx="80" cy="30" r="4" fill="#b91c1c"/>
+          </svg>
+          <figcaption class="cj-wall-label">声明现场 · 麦克风</figcaption>
+        </figure>
+
+        <figure class="cj-wall-item tall">
+          <svg viewBox="0 0 160 240" role="img" aria-label="影像墙：垂直时间刻度与编号序列">
+            <rect width="160" height="240" fill="#171420"/>
+            <line x1="40" y1="20" x2="40" y2="220" stroke="#6d5a8c" stroke-width="3"/>
+            <g fill="#b91c1c">
+              <circle cx="40" cy="42" r="6"/><circle cx="40" cy="92" r="6"/>
+              <circle cx="40" cy="142" r="6"/><circle cx="40" cy="192" r="6"/>
+            </g>
+            <g font-family="monospace" font-size="10" fill="#a89d97">
+              <text x="58" y="46">2008.01</text><text x="58" y="96">2008.02</text>
+              <text x="58" y="146">2008.03</text><text x="58" y="196">2008.06</text>
+            </g>
+          </svg>
+          <figcaption class="cj-wall-label">时间轴节点序列</figcaption>
+        </figure>
+
+        <figure class="cj-wall-item">
+          <svg viewBox="0 0 160 120" role="img" aria-label="影像墙小图：胶片盘与光线">
+            <rect width="160" height="120" fill="#e7e2de"/>
+            <circle cx="80" cy="60" r="34" fill="none" stroke="#3a3330" stroke-width="8"/>
+            <circle cx="80" cy="60" r="8" fill="#3a3330"/>
+            <g fill="#b91c1c"><circle cx="80" cy="34" r="4"/><circle cx="104" cy="48" r="4"/><circle cx="98" cy="80" r="4"/><circle cx="62" cy="80" r="4"/><circle cx="56" cy="48" r="4"/></g>
+          </svg>
+          <figcaption class="cj-wall-label">胶片盘 · 影视资料</figcaption>
+        </figure>
+
+        <figure class="cj-wall-item wide">
+          <svg viewBox="0 0 320 120" role="img" aria-label="影像墙：评论区截图示意">
+            <rect width="320" height="120" fill="#faf8f6"/>
+            <rect x="16" y="16" width="288" height="34" rx="6" fill="#f2eeea"/>
+            <circle cx="36" cy="33" r="9" fill="#b91c1c"/>
+            <rect x="54" y="26" width="90" height="6" rx="3" fill="#b8aea6"/>
+            <rect x="54" y="38" width="180" height="5" rx="2.5" fill="#d8d0c9"/>
+            <rect x="16" y="60" width="288" height="34" rx="6" fill="#f2eeea"/>
+            <circle cx="36" cy="77" r="9" fill="#33404a"/>
+            <rect x="54" y="70" width="120" height="6" rx="3" fill="#b8aea6"/>
+            <rect x="54" y="82" width="150" height="5" rx="2.5" fill="#d8d0c9"/>
+          </svg>
+          <figcaption class="cj-wall-label">读者留言 · 讨论片段</figcaption>
+        </figure>
+
+        <figure class="cj-wall-item">
+          <svg viewBox="0 0 160 120" role="img" aria-label="影像墙小图：放映机镜头光束">
+            <rect width="160" height="120" fill="#141719"/>
+            <rect x="18" y="44" width="42" height="34" rx="4" fill="#3a3330"/>
+            <circle cx="60" cy="61" r="10" fill="#5f6b72"/>
+            <path d="M60 55 L150 22 L150 100 L60 67 Z" fill="#b91c1c" opacity=".18"/>
+            <path d="M60 58 L150 34 L150 88 L60 64 Z" fill="#fca5a5" opacity=".12"/>
+          </svg>
+          <figcaption class="cj-wall-label">放映机 · 资料转制</figcaption>
+        </figure>
+
+        <figure class="cj-wall-item">
+          <svg viewBox="0 0 160 120" role="img" aria-label="影像墙小图：文件夹与索引标签">
+            <rect width="160" height="120" fill="#e5ded8"/>
+            <rect x="26" y="34" width="108" height="66" rx="4" fill="#141414"/>
+            <rect x="26" y="34" width="46" height="14" rx="4" fill="#b91c1c"/>
+            <g fill="#8f847e">
+              <rect x="40" y="60" width="80" height="5" rx="2.5"/>
+              <rect x="40" y="72" width="64" height="5" rx="2.5"/>
+              <rect x="40" y="84" width="74" height="5" rx="2.5"/>
+            </g>
+          </svg>
+          <figcaption class="cj-wall-label">索引标签 · 条目分类</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section class="cj-section" id="cj-reviews" aria-labelledby="cj-reviews-title">
+    <div class="cj-wrap">
+      <div class="cj-sec-head">
+        <div>
+          <span class="cj-eyebrow">READER VOICES</span>
+          <h2 id="cj-reviews-title">读者与研究者怎么说</h2>
+          <p>节选自档案留言区与专题讨论，不同视角的记录同样被尊重。</p>
+        </div>
+      </div>
+
+      <div class="cj-review-grid">
+        <article class="cj-review">
+          <p>作为做媒体史的学生，这里的来源标注真的帮了大忙。每一条都能找到两个以上出处，写论文时引用起来心里有底。</p>
+          <div class="cj-rv-foot">
+            <span class="cj-avatar" style="background:#33404a">研</span>
+            <b>传播学研究生</b><span>· 档案使用者</span>
+            <span class="cj-stars">★★★★★</span>
+          </div>
+        </article>
+
+        <article class="cj-review">
+          <p>我本来只是想找点旧影像看看，结果被时间轴的整理方式吸引住了。原来一件事可以被这样克制地讲清楚。</p>
+          <div class="cj-rv-foot">
+            <span class="cj-avatar" style="background:#b91c1c">观</span>
+            <b>普通观众</b><span>· 档案读者</span>
+            <span class="cj-stars">★★★★★</span>
+          </div>
+        </article>
+
+        <article class="cj-review">
+          <p>明确不收录私人影像这一点，让我愿意把这里推荐给学生。做档案的人先守住边界，资料才有公信力。</p>
+          <div class="cj-rv-foot">
+            <span class="cj-avatar" style="background:#a16207">教</span>
+            <b>中学教师</b><span>· 课堂推荐</span>
+            <span class="cj-stars">★★★★★</span>
+          </div>
+        </article>
+
+        <article class="cj-review">
+          <p>音乐现场和影视花絮那部分补得很及时。人物不该只被一件事定义，这句话我在别处也说过，这里做到了。</p>
+          <div class="cj-rv-foot">
+            <span class="cj-avatar" style="background:#6d5a8c">影</span>
+            <b>影像爱好者</b><span>· 长期关注</span>
+            <span class="cj-stars">★★★★☆</span>
+          </div>
+        </article>
+
+        <article class="cj-review">
+          <p>建议时间轴继续做下去，尤其是后续行业规则变化那一段，现在的中文资料里太少见了。</p>
+          <div class="cj-rv-foot">
+            <span class="cj-avatar" style="background:#141414">写</span>
+            <b>自由写作者</b><span>· 专栏读者</span>
+            <span class="cj-stars">★★★★☆</span>
+          </div>
+        </article>
+
+        <article class="cj-review">
+          <p>页面里能感觉到编辑的分寸感。没有煽动，也没有回避，只是把事情按顺序放好，这已经很难得。</p>
+          <div class="cj-rv-foot">
+            <span class="cj-avatar" style="background:#8f847e">读</span>
+            <b>档案馆常客</b><span>· 留言 23 条</span>
+            <span class="cj-stars">★★★★★</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWS ===== -->
+  <section class="cj-section cj-section-alt" id="cj-news" aria-labelledby="cj-news-title">
+    <div class="cj-wrap">
+      <div class="cj-sec-head">
+        <div>
+          <span class="cj-eyebrow">ARCHIVE NEWS</span>
+          <h2 id="cj-news-title">档案动态与更新日志</h2>
+          <p>官方发布的条目更新、专题上线与协作进展。</p>
+        </div>
+      </div>
+
+      <div class="cj-news-grid">
+        <div>
+          <ul class="cj-news-list">
+            <li>
+              <div class="cj-ndate"><b>18</b>2026.11</div>
+              <div>
+                <h3>时间轴第三版上线，新增 38 个节点</h3>
+                <p>本次更新补齐了 2008 年 3 月至 6 月间的公开影像资料，并对 21 条历史传闻标注"待考"状态。</p>
+              </div>
+            </li>
+            <li>
+              <div class="cj-ndate"><b>15</b>2026.11</div>
+              <div>
+                <h3>专题影像「公共事件与隐私边界」第 12 期发布</h3>
+                <p>由特约研究员林序撰稿，讨论媒体报道中的隐私边界，附 4 段公开影像资料对照。</p>
+              </div>
+            </li>
+            <li>
+              <div class="cj-ndate"><b>10</b>2026.11</div>
+              <div>
+                <h3>创作者档案上线，开放专题投稿入口</h3>
+                <p>档案创作者矩阵新增 2 位成员，同时开放"影像伦理"方向的专题投稿，欢迎研究者报名参与。</p>
+              </div>
+            </li>
+            <li>
+              <div class="cj-ndate"><b>02</b>2026.11</div>
+              <div>
+                <h3>声明影像数字化修复完成，画质提升至高清</h3>
+                <p>影像整理员阿灯完成 12 段声明影像的修复与标注，说明文字同步更新，供研究者对照使用。</p>
+              </div>
+            </li>
+            <li>
+              <div class="cj-ndate"><b>26</b>2026.10</div>
+              <div>
+                <h3>档案馆与两家高校传播学院达成资料协作</h3>
+                <p>后续将在条目引用规范、影像伦理课程案例方面展开合作，相关公开资料将逐步纳入档案。</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 style="font-size:15px;margin-bottom:14px;letter-spacing:.04em;">资料协作与支持伙伴</h3>
+          <div class="cj-partner-grid">
+            <div class="cj-partner">传播学院<small>资料协作</small></div>
+            <div class="cj-partner">城市图书馆<small>档案共建</small></div>
+            <div class="cj-partner">影像修复室<small>技术支持</small></div>
+            <div class="cj-partner">媒体史研究会<small>学术支持</small></div>
+            <div class="cj-partner">独立影像社<small>内容共创</small></div>
+            <div class="cj-partner">数字保存联盟<small>长期存档</small></div>
+          </div>
+          <p style="font-size:12.5px;color:var(--cj-gray);margin-top:18px;line-height:1.8;">
+            我们欢迎更多机构参与资料协作。所有合作均以公开资料为范围，不涉及任何私人影像，协作详情可通过页面底部联系方式咨询。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="cj-section" id="cj-faq" aria-labelledby="cj-faq-title">
+    <div class="cj-wrap">
+      <div class="cj-sec-head">
+        <div>
+          <span class="cj-eyebrow">FAQ</span>
+          <h2 id="cj-faq-title">常见问题</h2>
+          <p>关于档案馆定位、资料范围与引用规范的说明。</p>
+        </div>
+      </div>
+
+      <div class="cj-faq">
+        <details>
+          <summary>档案馆收录哪些内容？</summary>
+          <div class="cj-faq-body">我们收录围绕陈冠希公开职业生涯与相关公共事件的公开影像资料，包括媒体报道影像、当事人公开发言与声明、行业规则讨论、音乐与影视公开资料等。所有条目均标注来源与可信度等级。</div>
+        </details>
+        <details>
+          <summary>这里会提供私人影像资料吗？</summary>
+          <div class="cj-faq-body">不会。档案馆明确不收录、不索引、不提供任何涉及个人隐私的影像内容。这一原则是档案馆成立以来的基本边界，也是我们作为内容平台的社会责任所在。</div>
+        </details>
+        <details>
+          <summary>时间轴节点的可信度如何判断？</summary>
+          <div class="cj-faq-body">每个节点至少需要两个独立来源交叉验证，无法验证的传闻单独列入"待考"区并明确标注状态。编辑组会持续复核，欢迎研究者提供新的公开来源线索。</div>
+        </details>
+        <details>
+          <summary>可以引用档案馆的内容吗？</summary>
+          <div class="cj-faq-body">可以。在注明来源、不用于商业用途的前提下，允许引用条目摘要与公开影像资料。如需用于正式出版物，建议通过页面底部联系方式与我们确认引用格式。</div>
+        </details>
+        <details>
+          <summary>如何参与档案建设或投稿？</summary>
+          <div class="cj-faq-body">我们开放"影像伦理"与"公共事件传播"方向的专题投稿，也欢迎影像整理、资料核验方向的志愿者。点击页面的投稿入口填写简要说明即可，编辑组会在七个工作日内回复。</div>
+        </details>
+        <details>
+          <summary>档案馆的更新时间是什么？</summary>
+          <div class="cj-faq-body">常规条目每周更新一次，时间轴与专题内容按版本发布，重大更新会在页面顶部的公告条与档案动态区同步公示，所有历史版本保留可查。</div>
+        </details>
+        <details>
+          <summary>发现错误或遗漏怎么办？</summary>
+          <div class="cj-faq-body">欢迎通过联系入口提交纠错信息，请尽量附上公开来源链接或出处说明。编辑组会逐条核对，确认后在更新日志中注明修订记录。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="cj-section" id="cj-contact" aria-labelledby="cj-contact-title">
+    <div class="cj-wrap">
+      <div class="cj-contact">
+        <div>
+          <h2 id="cj-contact-title">与档案馆取得联系</h2>
+          <p>资料协作、条目纠错、专题投稿或媒体咨询，都欢迎与我们沟通。作为持续运营的影像档案官方网站，我们重视每一条来自研究者与读者的反馈。</p>
+          <div class="cj-contact-actions">
+            <button class="cj-btn cj-btn-primary" type="button" data-cj-submit>提交投稿 / 纠错</button>
+            <button class="cj-btn cj-btn-ghost" type="button" data-cj-share>分享档案馆</button>
+          </div>
+        </div>
+        <div class="cj-contact-info">
+          <div class="cj-ci-item"><b>资料协作</b>archive@cj-archive.example</div>
+          <div class="cj-ci-item"><b>专题投稿</b>submit@cj-archive.example</div>
+          <div class="cj-ci-item"><b>工作时间</b>周一至周五 10:00 - 18:00</div>
+          <div class="cj-ci-item"><b>办公地址</b>城市文化园区 影像资料楼 3 层</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="cj-footer">
+  <div class="cj-wrap">
+    <div class="cj-footer-grid">
+      <div>
+        <h4>陈冠希影像档案 · 官方网站</h4>
+        <p>以企业级档案标准记录公众人物影像资料的持续运营平台。坚持原创整理、正版来源、隐私边界与内容品质，为研究者、创作者与观众提供值得信赖的公共资料。</p>
+      </div>
+      <div>
+        <h4>档案导航</h4>
+        <ul>
+          <li><a href="#cj-intro">档案定位</a></li>
+          <li><a href="#cj-focus">焦点影像</a></li>
+          <li><a href="#cj-videos">视频档案</a></li>
+          <li><a href="#cj-creators">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>支持与协作</h4>
+        <ul>
+          <li><a href="#cj-news">档案动态</a></li>
+          <li><a href="#cj-faq">常见问题</a></li>
+          <li><a href="#cj-contact">资料协作</a></li>
+          <li><a href="#cj-contact">纠错反馈</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>编辑原则</h4>
+        <ul>
+          <li>双来源交叉验证</li>
+          <li>隐私边界优先</li>
+          <li>标注可信度等级</li>
+          <li>历史版本可查</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cj-footer-bottom">
+      <span>© 2009–2026 陈冠希影像档案官方网站 · 持续运营中 · 资料仅限公开来源</span>
+      <span><a href="#cj-top">返回顶部</a> · <a href="#cj-faq">使用说明</a> · <a href="#cj-contact">联系我们</a></span>
+    </div>
+  </div>
+</footer>
+
+<button class="cj-top-btn" id="cjTopBtn" type="button" aria-label="回到顶部"><i></i></button>
+
+<div class="cj-toast" id="cjToast" role="status" aria-live="polite"></div>
+
+<!-- ===== SHARE MODAL ===== -->
+<div class="cj-modal" id="cjShareModal" role="dialog" aria-modal="true" aria-labelledby="cjShareTitle">
+  <div class="cj-modal-box">
+    <button class="cj-modal-close" type="button" data-cj-close aria-label="关闭">×</button>
+    <h3 id="cjShareTitle">分享档案馆</h3>
+    <p>把这份持续更新的影像档案分享给需要的人。</p>
+    <div class="cj-share-row">
+      <button type="button" data-cj-share-to="微信">微信</button>
+      <button type="button" data-cj-share-to="微博">微博</button>
+      <button type="button" data-cj-share-to="QQ">QQ</button>
+      <button type="button" id="cjCopyLink">复制链接</button>
+    </div>
+    <p style="font-size:12px;color:#918b86;margin:0;">提示：分享时请勿附加任何私人影像或未经核实的信息。</p>
+  </div>
+</div>
+
+<!-- ===== SUBMIT MODAL ===== -->
+<div class="cj-modal" id="cjSubmitModal" role="dialog" aria-modal="true" aria-labelledby="cjSubmitTitle">
+  <div class="cj-modal-box">
+    <button class="cj-modal-close" type="button" data-cj-close aria-label="关闭">×</button>
+    <h3 id="cjSubmitTitle">投稿 / 纠错</h3>
+    <p>请简要说明内容方向或需要修订的条目，编辑组会在七个工作日内回复。</p>
+    <form id="cjSubmitForm">
+      <div class="cj-field">
+        <label for="cjSubmitName">称呼</label>
+        <input id="cjSubmitName" type="text" placeholder="如何称呼您" required>
+      </div>
+      <div class="cj-field">
+        <label for="cjSubmitType">类型</label>
+        <input id="cjSubmitType" type="text" placeholder="如：专题投稿 / 条目纠错" value="专题投稿">
+      </div>
+      <div class="cj-field">
+        <label for="cjSubmitMsg">说明</label>
+        <textarea id="cjSubmitMsg" rows="3" placeholder="请描述要点，并尽量附公开来源线索" required></textarea>
+      </div>
+      <div class="cj-modal-actions">
+        <button class="cj-btn cj-btn-ghost" type="button" data-cj-close>取消</button>
+        <button class="cj-btn cj-btn-primary" type="submit">提交</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- ===== COMMENT MODAL ===== -->
+<div class="cj-modal" id="cjCommentModal" role="dialog" aria-modal="true" aria-labelledby="cjCommentTitle">
+  <div class="cj-modal-box">
+    <button class="cj-modal-close" type="button" data-cj-close aria-label="关闭">×</button>
+    <h3 id="cjCommentTitle">条目留言</h3>
+    <p id="cjCommentHint">围绕档案条目留下你的看法，请保持理性与尊重。</p>
+    <div class="cj-field">
+      <label for="cjCommentInput">留言内容</label>
+      <textarea id="cjCommentInput" rows="3" placeholder="写下你的观察或补充线索"></textarea>
+    </div>
+    <div class="cj-modal-actions">
+      <button class="cj-btn cj-btn-ghost" type="button" data-cj-close>取消</button>
+      <button class="cj-btn cj-btn-primary" type="button" id="cjCommentSend">发布留言</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CREATOR MODAL ===== -->
+<div class="cj-modal" id="cjCreatorModal" role="dialog" aria-modal="true" aria-labelledby="cjCreatorTitle">
+  <div class="cj-modal-box">
+    <button class="cj-modal-close" type="button" data-cj-close aria-label="关闭">×</button>
+    <h3 id="cjCreatorTitle">创作者简介</h3>
+    <p id="cjCreatorBio">—</p>
+    <div class="cj-modal-actions">
+      <button class="cj-btn cj-btn-primary" type="button" data-cj-close>知道了</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toast = document.getElementById('cjToast');
+  var toastTimer = null;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('show'); }, 2200);
+  }
+
+  /* ---- mobile nav ---- */
+  var burger = document.getElementById('cjBurger');
+  var mobileNav = document.getElementById('cjMobileNav');
+  burger.addEventListener('click', function(){
+    var open = mobileNav.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.setAttribute('aria-label', open ? '收起导航' : '展开导航');
+  });
+  mobileNav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      mobileNav.classList.remove('open');
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+
+  /* ---- search feedback ---- */
+  var searchInput = document.getElementById('cjSearchInput');
+  var searchBtn = document.getElementById('cjSearchBtn');
+  var searchFeedback = document.getElementById('cjSearchFeedback');
+  var searchInner = document.getElementById('cjSearchFeedbackInner');
+  var searchIndex = [
+    {t:'事件时间轴影像长卷', k:['时间轴','事件','影像','长卷']},
+    {t:'公开声明影像与语境还原', k:['声明','公开','语境','还原']},
+    {t:'法律与隐私边界讨论影像', k:['法律','隐私','边界','讨论']},
+    {t:'音乐现场影像记录', k:['音乐','现场','演出','记录']},
+    {t:'潮流文化公开活动影像', k:['潮流','文化','活动','公开']},
+    {t:'早期影视作品公开花絮', k:['影视','花絮','早期','作品']},
+    {t:'档案定位与深度解析', k:['定位','解析','介绍','档案']},
+    {t:'档案创作者矩阵', k:['创作者','作者','矩阵']}
+  ];
+  function runSearch(){
+    var q = (searchInput.value || '').trim();
+    if(!q){
+      searchInner.innerHTML = '请输入关键词，例如：时间轴、隐私边界、创作者。';
+      searchFeedback.classList.add('show');
+      return;
+    }
+    var hits = searchIndex.filter(function(item){
+      if(item.t.indexOf(q) > -1) return true;
+      return item.k.some(function(k){ return k.indexOf(q) > -1 || q.indexOf(k) > -1; });
+    });
+    if(hits.length){
+      var names = hits.slice(0,4).map(function(h){ return '<b>'+h.t+'</b>'; }).join('、');
+      searchInner.innerHTML = '与「'+q+'」相关的档案共 '+hits.length+' 条：'+names+'。可前往视频档案区查看。';
+    }else{
+      searchInner.innerHTML = '暂未找到与「'+q+'」直接匹配的条目，可尝试「时间轴」「声明」「隐私边界」等关键词。';
+    }
+    searchFeedback.classList.add('show');
+  }
+  searchBtn.addEventListener('click', runSearch);
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); runSearch(); }
+  });
+
+  /* ---- like / fav ---- */
+  document.querySelectorAll('[data-cj-like]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var numEl = btn.querySelector('.cj-like-num');
+      var on = btn.classList.toggle('on');
+      if(numEl){
+        var n = parseInt(numEl.textContent, 10) || 0;
+        numEl.textContent = on ? n + 1 : Math.max(0, n - 1);
+      }
+      showToast(on ? '已点赞该条目' : '已取消点赞');
+    });
+  });
+  document.querySelectorAll('[data-cj-fav]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var on = btn.classList.toggle('on');
+      var path = btn.querySelector('path');
+      if(path){ path.setAttribute('fill', on ? 'currentColor' : 'none'); }
+      showToast(on ? '已收藏到我的档案夹' : '已取消收藏');
+    });
+  });
+
+  /* ---- comment modal ---- */
+  var commentModal = document.getElementById('cjCommentModal');
+  var commentHint = document.getElementById('cjCommentHint');
+  document.querySelectorAll('[data-cj-comment]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var card = btn.closest('.cj-card');
+      var title = card ? (card.getAttribute('data-cj-title') || '') : '';
+      commentHint.textContent = title ? ('正在为「'+title+'」留言，请保持理性与尊重。') : '围绕档案条目留下你的看法，请保持理性与尊重。';
+      openModal(commentModal);
+    });
+  });
+  document.getElementById('cjCommentSend').addEventListener('click', function(){
+    var v = document.getElementById('cjCommentInput').value.trim();
+    if(!v){ showToast('请先输入留言内容'); return; }
+    document.getElementById('cjCommentInput').value = '';
+    closeModal(commentModal);
+    showToast('留言已提交，感谢你的补充');
+  });
+
+  /* ---- modal helpers ---- */
+  function openModal(m){ m.classList.add('open'); }
+  function closeModal(m){ m.classList.remove('open'); }
+  document.querySelectorAll('[data-cj-close]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var m = btn.closest('.cj-modal');
+      if(m) closeModal(m);
+    });
+  });
+  document.querySelectorAll('.cj-modal').forEach(function(m){
+    m.addEventListener('click', function(e){
+      if(e.target === m) closeModal(m);
+    });
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      document.querySelectorAll('.cj-modal.open').forEach(closeModal);
+    }
+  });
+
+  /* ---- share modal ---- */
+  var shareModal = document.getElementById('cjShareModal');
+  document.querySelectorAll('[data-cj-share]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.preventDefault();
+      openModal(shareModal);
+    });
+  });
+  document.querySelectorAll('[data-cj-share-to]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var to = btn.getAttribute('data-cj-share-to');
+      showToast('已准备分享到' + to + '，请在新的窗口完成');
+      closeModal(shareModal);
+    });
+  });
+  document.getElementById('cjCopyLink').addEventListener('click', function(){
+    var url = window.location.href;
+    function done(){ showToast('链接已复制'); closeModal(shareModal); }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url).then(done).catch(function(){ fallbackCopy(url, done); });
+    }else{
+      fallbackCopy(url, done);
+    }
+  });
+  function fallbackCopy(text, done){
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try{ document.execCommand('copy'); done(); }
+    catch(err){ showToast('复制失败，请手动选择地址栏链接'); }
+    document.body.removeChild(ta);
+  }
+
+  /* ---- submit modal ---- */
+  var submitModal = document.getElementById('cjSubmitModal');
+  document.querySelectorAll('[data-cj-submit]').forEach(function(btn){
+    btn.addEventListener('click', function(){ openModal(submitModal); });
+  });
+  document.getElementById('cjSubmitForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('cjSubmitName').value.trim();
+    var msg = document.getElementById('cjSubmitMsg').value.trim();
+    if(!name || !msg){ showToast('请填写称呼与说明'); return; }
+    this.reset();
+    document.getElementById('cjSubmitType').value = '专题投稿';
+    closeModal(submitModal);
+    showToast('已提交，编辑组会尽快回复');
+  });
+
+  /* ---- creator modal ---- */
+  var creatorModal = document.getElementById('cjCreatorModal');
+  var creatorBio = document.getElementById('cjCreatorBio');
+  var creatorTitle = document.getElementById('cjCreatorTitle');
+  document.querySelectorAll('[data-cj-creator]').forEach(function(card){
+    card.addEventListener('click', function(){
+      var name = card.getAttribute('data-cj-creator');
+      var bio = card.getAttribute('data-cj-creator-bio');
+      creatorTitle.textContent = name + ' · 创作者简介';
+      creatorBio.textContent = bio || '暂无简介';
+      openModal(creatorModal);
+    });
+  });
+
+  /* ---- back to top ---- */
+  var topBtn = document.getElementById('cjTopBtn');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 460){ topBtn.classList.add('show'); }
+    else{ topBtn.classList.remove('show'); }
+  });
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  /* ---- card click -> summary toast (except action buttons) ---- */
+  document.querySelectorAll('.cj-card').forEach(function(card){
+    card.addEventListener('click', function(e){
+      if(e.target.closest('button')) return;
+      var title = card.getAttribute('data-cj-title') || '';
+      if(title) showToast('打开条目摘要：' + title);
+    });
+  });
+
+  /* ---- tag chips ---- */
+  document.querySelectorAll('.cj-topic-chip').forEach(function(chip){
+    chip.addEventListener('click', function(e){
+      e.preventDefault();
+      showToast('已按话题筛选：' + chip.textContent.replace('#','').trim());
+    });
+  });
+
+})();
+</script>
+</body>
+                                                                                    </html>
